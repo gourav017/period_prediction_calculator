@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <form id="form">
+      <label class="lables" for="">When did your last period start?</label
+      ><br />
+      <input type="date" id="last_period_date" value="2023-02-07" />
+      <br />
+      <label class="lables">How many days did it last?</label><br />
+      <div class="counters">
+        <input type="button" onclick="Increment()" value="+" />
+        <p id="days_did_it_last">5</p>
+        <input type="button" onclick="Decrement()" value="-" />
+      </div>
+      <label class="lables">Average cycle length (days)</label>
+      <div class="counters">
+        <input type="button" onclick="Incrementcycleday()" value="+" />
+        <p id="periods_cycle">28</p>
+        <input type="button" onclick="Decrementcycleday()" value="-" />
+      </div>
+      <br />
+      <p id="errormsg"></p>
+      <button type="submit" class="btn">See results</button>
+    </form>
+    <button onclick="startOver()" class="resetbtn">start over</button>
+    <div class="resultbox">
+      <div>
+        <p>Your estimated ovulation date</p>
+
+        <p id="ovulation_date_result"></p>
+      </div>
+      <div>
+        <p>Your estimated period dates are</p>
+        <div class="result_2">
+          <p id="estimated_period_dates_to"></p>
+          <p id="estimated_period_dates_from"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>

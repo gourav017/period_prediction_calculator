@@ -1,0 +1,88 @@
+#form {
+  text-align: center;
+  background-color: #faf7f7;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.counters {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: white;
+  width: 30%;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+#last_period_date {
+  font-size: xx-large;
+  width: 50%;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn {
+  background-color: #ff5a7d;
+  width: 100%;
+  padding: 15px;
+  font-size: xx-large;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  color: #faf7f7;
+}
+.counters input {
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  font-size: xx-large;
+}
+.lables {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#errormsg {
+  color: #ff5a7d;
+}
+
+.resultbox>div {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  height: 200px;
+  width: 50%;
+  text-align: center;
+  font-size: xx-large;
+}
+.resultbox {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.resetbtn{
+  margin-left: 500px;
+  background-color: white;
+  font-size: x-large;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  color: teal;
+  text-decoration: underline;
+  
+}
+.resetbtn:hover{
+  text-decoration: none;
+}
+.result_2{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  
+}
+
